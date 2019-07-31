@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'img/foto.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Diego Mazorra</h2>
+        <p align="justify">Nacido en Neiva/Huila Colombia ingeniero Electrónico de la Universidad Surcolombiana. Apasionado. Persistente y Creativo. . </p>
+        <p align="justify">He desarrollado para mi proyecto de tesis un desarrollo web en donde desarrolle mis aptitudes en programación y bases de datos haciendo énfasis en lenguaje de programación Python por medio del framework django titulado "Software y validación RFID para el sistema de acceso del sistema del restaurante USCO " y he realizado cursos online y presenciales relacionados al tema.</p>
+    </div>
+</div>
+
+{% endblock %}
